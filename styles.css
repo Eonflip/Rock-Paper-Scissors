@@ -1,0 +1,151 @@
+body {
+    background-color: lightslategray;
+}
+
+:root {
+    --primary-light: #ddd;
+    --primary-dark: #343847;
+    --secondary-dark: #7984ab;
+    --secondary-dark-hover: #4f587d;
+    --secondary-dark-active: #343f6c;
+    --header: #111e52;
+    --primary-green: #1aab90;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
+    margin-bottom: 100px;
+}
+
+button {
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    outline: none;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0px;
+    background-color: var(--header);
+}
+
+.title {
+    font-size: 32px;
+    color: var(--primary-green);
+}
+
+.main {
+    margin-top: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.scoreboard {
+    margin-bottom: 15px;
+}
+
+.score-info {
+    font-size: 32px;
+}
+
+
+.score-message {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.score-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.score-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.score {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}    
+
+.btn {
+    width: 160px;
+    height: 160px;
+    border-radius: 150px;
+    background-color: var(--secondary-dark);
+}
+
+.btn:hover {
+    background-color: var(--secondary-dark-hover);
+}
+
+.btn:active {
+    background-color: var(--secondary-dark-active);
+}
+
+.btn-square {
+    width: 160px;
+    height: 160px;
+}
+
+.sign {
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    color: var(--primary-light);
+    background-color: var(--header);
+    font-size: 20px;
+}
+
+.fa-github {
+    font-size: 30px;
+    color: white;
+}
